@@ -7,6 +7,10 @@ var cors = require("cors");
 app.use(cors());
 //=================================================
 
+app.get("/", (req, res) => {
+  res.send("welcome");
+});
+
 const userRoute = require("./routes/user.routes");
 const taskRoute = require("./routes/task.routes");
 
